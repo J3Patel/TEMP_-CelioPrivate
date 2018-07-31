@@ -31,7 +31,6 @@
 		AD672EA62108BFC3005A2E98 /* JPBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA52108BFC3005A2E98 /* JPBirthday.swift */; };
 		AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */; };
 		AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EAA2108C819005A2E98 /* APIRouter.swift */; };
-		AD672EB4210A1A1D005A2E98 /* GetUsersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EB3210A1A1D005A2E98 /* GetUsersOperation.swift */; };
 		F5E86D676C57664974EB35BB /* Pods_Celio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		AD672EA52108BFC3005A2E98 /* JPBirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPBirthday.swift; sourceTree = "<group>"; };
 		AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		AD672EAA2108C819005A2E98 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
-		AD672EB3210A1A1D005A2E98 /* GetUsersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersOperation.swift; sourceTree = "<group>"; };
 		F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,9 +116,8 @@
 		AD2071902101CCA100042159 /* Celio */ = {
 			isa = PBXGroup;
 			children = (
-				AD672EB2210A14FB005A2E98 /* DataOperations */,
-				AD672EA72108C75A005A2E98 /* Network */,
-				AD672E992107689B005A2E98 /* ResponseDataModel */,
+				AD672EA72108C75A005A2E98 /* Celio */,
+				AD287C88211081E100A1F78A /* Example */,
 				AD2071912101CCA100042159 /* AppDelegate.swift */,
 				AD2071932101CCA100042159 /* ViewController.swift */,
 				AD2071952101CCA100042159 /* Main.storyboard */,
@@ -132,63 +129,71 @@
 			path = Celio;
 			sourceTree = "<group>";
 		};
-		AD287C66210E549100A1F78A /* Operations */ = {
+		AD287C66210E549100A1F78A /* COperations */ = {
 			isa = PBXGroup;
 			children = (
-				AD287C79210F4EA200A1F78A /* Operation Queue */,
-				AD287C76210F413A00A1F78A /* Observers */,
-				AD287C75210F3F8B00A1F78A /* Operations */,
-				AD287C6C210F1CBA00A1F78A /* Conditions */,
-				AD287C69210E583500A1F78A /* Convenience Extensions */,
+				AD287C79210F4EA200A1F78A /* COperationQueue */,
+				AD287C76210F413A00A1F78A /* CObservers */,
+				AD287C75210F3F8B00A1F78A /* COperations */,
+				AD287C6C210F1CBA00A1F78A /* CConditions */,
+				AD287C69210E583500A1F78A /* CConvenienceExtensions */,
 			);
-			path = Operations;
+			path = COperations;
 			sourceTree = "<group>";
 		};
-		AD287C69210E583500A1F78A /* Convenience Extensions */ = {
+		AD287C69210E583500A1F78A /* CConvenienceExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				AD287C6A210E586200A1F78A /* NSLock+.swift */,
 				AD287C71210F3DDD00A1F78A /* NSError+.swift */,
 			);
-			path = "Convenience Extensions";
+			path = CConvenienceExtensions;
 			sourceTree = "<group>";
 		};
-		AD287C6C210F1CBA00A1F78A /* Conditions */ = {
+		AD287C6C210F1CBA00A1F78A /* CConditions */ = {
 			isa = PBXGroup;
 			children = (
 				AD287C6F210F350200A1F78A /* COperationCondition.swift */,
 				AD287C73210F3E0E00A1F78A /* COperationError.swift */,
 				AD287C84210FE73200A1F78A /* CReachabilityCondition.swift */,
 			);
-			path = Conditions;
+			path = CConditions;
 			sourceTree = "<group>";
 		};
-		AD287C75210F3F8B00A1F78A /* Operations */ = {
+		AD287C75210F3F8B00A1F78A /* COperations */ = {
 			isa = PBXGroup;
 			children = (
 				AD287C67210E575900A1F78A /* COperation.swift */,
 				AD287C80210FD61000A1F78A /* CGroupOperation.swift */,
 				AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */,
 			);
-			name = Operations;
+			name = COperations;
 			sourceTree = "<group>";
 		};
-		AD287C76210F413A00A1F78A /* Observers */ = {
+		AD287C76210F413A00A1F78A /* CObservers */ = {
 			isa = PBXGroup;
 			children = (
 				AD287C77210F415100A1F78A /* COperationObserver.swift */,
 				AD287C7C210F52EC00A1F78A /* CBlockObserver.swift */,
 			);
-			name = Observers;
+			name = CObservers;
 			sourceTree = "<group>";
 		};
-		AD287C79210F4EA200A1F78A /* Operation Queue */ = {
+		AD287C79210F4EA200A1F78A /* COperationQueue */ = {
 			isa = PBXGroup;
 			children = (
 				AD287C82210FD64800A1F78A /* CExclusivityController.swift */,
 				AD287C7A210F4EB400A1F78A /* COperationQueue.swift */,
 			);
-			name = "Operation Queue";
+			name = COperationQueue;
+			sourceTree = "<group>";
+		};
+		AD287C88211081E100A1F78A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				AD672E992107689B005A2E98 /* ResponseDataModel */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		AD672E992107689B005A2E98 /* ResponseDataModel */ = {
@@ -210,22 +215,14 @@
 			path = SampleDataModel;
 			sourceTree = "<group>";
 		};
-		AD672EA72108C75A005A2E98 /* Network */ = {
+		AD672EA72108C75A005A2E98 /* Celio */ = {
 			isa = PBXGroup;
 			children = (
-				AD287C66210E549100A1F78A /* Operations */,
+				AD287C66210E549100A1F78A /* COperations */,
 				AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */,
 				AD672EAA2108C819005A2E98 /* APIRouter.swift */,
 			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		AD672EB2210A14FB005A2E98 /* DataOperations */ = {
-			isa = PBXGroup;
-			children = (
-				AD672EB3210A1A1D005A2E98 /* GetUsersOperation.swift */,
-			);
-			path = DataOperations;
+			path = Celio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +330,6 @@
 				AD287C7D210F52EC00A1F78A /* CBlockObserver.swift in Sources */,
 				AD672E9D2108A574005A2E98 /* JPSampleResponseDataModel.swift in Sources */,
 				AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */,
-				AD672EB4210A1A1D005A2E98 /* GetUsersOperation.swift in Sources */,
 				AD287C72210F3DDD00A1F78A /* NSError+.swift in Sources */,
 				AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */,
 				AD287C68210E575900A1F78A /* COperation.swift in Sources */,
