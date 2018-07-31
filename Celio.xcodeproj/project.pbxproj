@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD2071922101CCA100042159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2071912101CCA100042159 /* AppDelegate.swift */; };
+		AD2071942101CCA100042159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2071932101CCA100042159 /* ViewController.swift */; };
+		AD2071972101CCA100042159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2071952101CCA100042159 /* Main.storyboard */; };
+		AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD2071982101CCA100042159 /* Celio.xcdatamodeld */; };
+		AD20719C2101CCA500042159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD20719B2101CCA500042159 /* Assets.xcassets */; };
+		AD20719F2101CCA500042159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD20719D2101CCA500042159 /* LaunchScreen.storyboard */; };
+		AD287C68210E575900A1F78A /* COperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C67210E575900A1F78A /* COperation.swift */; };
+		AD287C6B210E586200A1F78A /* NSLock+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C6A210E586200A1F78A /* NSLock+.swift */; };
+		AD287C70210F350200A1F78A /* COperationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C6F210F350200A1F78A /* COperationCondition.swift */; };
+		AD287C72210F3DDD00A1F78A /* NSError+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C71210F3DDD00A1F78A /* NSError+.swift */; };
+		AD287C74210F3E0E00A1F78A /* COperationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C73210F3E0E00A1F78A /* COperationError.swift */; };
+		AD287C78210F415100A1F78A /* COperationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C77210F415100A1F78A /* COperationObserver.swift */; };
+		AD287C7B210F4EB400A1F78A /* COperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C7A210F4EB400A1F78A /* COperationQueue.swift */; };
+		AD287C7D210F52EC00A1F78A /* CBlockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C7C210F52EC00A1F78A /* CBlockObserver.swift */; };
+		AD287C81210FD61000A1F78A /* CGroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C80210FD61000A1F78A /* CGroupOperation.swift */; };
+		AD287C83210FD64800A1F78A /* CExclusivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C82210FD64800A1F78A /* CExclusivityController.swift */; };
+		AD287C85210FE73200A1F78A /* CReachabilityCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C84210FE73200A1F78A /* CReachabilityCondition.swift */; };
+		AD287C87211066FB00A1F78A /* CURLSessionTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */; };
+		AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672E9A2108A51C005A2E98 /* ResponseDataModel.swift */; };
+		AD672E9D2108A574005A2E98 /* JPSampleResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */; };
+		AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */; };
+		AD672EA62108BFC3005A2E98 /* JPBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA52108BFC3005A2E98 /* JPBirthday.swift */; };
+		AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */; };
+		AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EAA2108C819005A2E98 /* APIRouter.swift */; };
+		AD672EB4210A1A1D005A2E98 /* GetUsersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EB3210A1A1D005A2E98 /* GetUsersOperation.swift */; };
+		F5E86D676C57664974EB35BB /* Pods_Celio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F25D76A972F0D9D1AD640AE /* Pods-Celio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Celio/Pods-Celio.debug.xcconfig"; sourceTree = "<group>"; };
+		88FB1D1DF7BF94AF06A491DD /* Pods-Celio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Celio/Pods-Celio.release.xcconfig"; sourceTree = "<group>"; };
+		AD20718E2101CCA100042159 /* Celio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Celio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2071912101CCA100042159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD2071932101CCA100042159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD2071962101CCA100042159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD2071992101CCA100042159 /* Celio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Celio.xcdatamodel; sourceTree = "<group>"; };
+		AD20719B2101CCA500042159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD20719E2101CCA500042159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD2071A02101CCA500042159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD287C67210E575900A1F78A /* COperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COperation.swift; sourceTree = "<group>"; };
+		AD287C6A210E586200A1F78A /* NSLock+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+.swift"; sourceTree = "<group>"; };
+		AD287C6F210F350200A1F78A /* COperationCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COperationCondition.swift; sourceTree = "<group>"; };
+		AD287C71210F3DDD00A1F78A /* NSError+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+.swift"; sourceTree = "<group>"; };
+		AD287C73210F3E0E00A1F78A /* COperationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COperationError.swift; sourceTree = "<group>"; };
+		AD287C77210F415100A1F78A /* COperationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COperationObserver.swift; sourceTree = "<group>"; };
+		AD287C7A210F4EB400A1F78A /* COperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COperationQueue.swift; sourceTree = "<group>"; };
+		AD287C7C210F52EC00A1F78A /* CBlockObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBlockObserver.swift; sourceTree = "<group>"; };
+		AD287C80210FD61000A1F78A /* CGroupOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGroupOperation.swift; sourceTree = "<group>"; };
+		AD287C82210FD64800A1F78A /* CExclusivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CExclusivityController.swift; sourceTree = "<group>"; };
+		AD287C84210FE73200A1F78A /* CReachabilityCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CReachabilityCondition.swift; sourceTree = "<group>"; };
+		AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CURLSessionTaskOperation.swift; sourceTree = "<group>"; };
+		AD672E9A2108A51C005A2E98 /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
+		AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPSampleResponseDataModel.swift; sourceTree = "<group>"; };
+		AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPCreditCard.swift; sourceTree = "<group>"; };
+		AD672EA52108BFC3005A2E98 /* JPBirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPBirthday.swift; sourceTree = "<group>"; };
+		AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		AD672EAA2108C819005A2E98 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		AD672EB3210A1A1D005A2E98 /* GetUsersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersOperation.swift; sourceTree = "<group>"; };
+		F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD20718B2101CCA100042159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5E86D676C57664974EB35BB /* Pods_Celio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00BF42C573CA9559237699D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E92F810BD307FF2D2AC4414 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F25D76A972F0D9D1AD640AE /* Pods-Celio.debug.xcconfig */,
+				88FB1D1DF7BF94AF06A491DD /* Pods-Celio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD2071852101CCA100042159 = {
+			isa = PBXGroup;
+			children = (
+				AD2071902101CCA100042159 /* Celio */,
+				AD20718F2101CCA100042159 /* Products */,
+				2E92F810BD307FF2D2AC4414 /* Pods */,
+				00BF42C573CA9559237699D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD20718F2101CCA100042159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD20718E2101CCA100042159 /* Celio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD2071902101CCA100042159 /* Celio */ = {
+			isa = PBXGroup;
+			children = (
+				AD672EB2210A14FB005A2E98 /* DataOperations */,
+				AD672EA72108C75A005A2E98 /* Network */,
+				AD672E992107689B005A2E98 /* ResponseDataModel */,
+				AD2071912101CCA100042159 /* AppDelegate.swift */,
+				AD2071932101CCA100042159 /* ViewController.swift */,
+				AD2071952101CCA100042159 /* Main.storyboard */,
+				AD20719B2101CCA500042159 /* Assets.xcassets */,
+				AD20719D2101CCA500042159 /* LaunchScreen.storyboard */,
+				AD2071A02101CCA500042159 /* Info.plist */,
+				AD2071982101CCA100042159 /* Celio.xcdatamodeld */,
+			);
+			path = Celio;
+			sourceTree = "<group>";
+		};
+		AD287C66210E549100A1F78A /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C79210F4EA200A1F78A /* Operation Queue */,
+				AD287C76210F413A00A1F78A /* Observers */,
+				AD287C75210F3F8B00A1F78A /* Operations */,
+				AD287C6C210F1CBA00A1F78A /* Conditions */,
+				AD287C69210E583500A1F78A /* Convenience Extensions */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		AD287C69210E583500A1F78A /* Convenience Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C6A210E586200A1F78A /* NSLock+.swift */,
+				AD287C71210F3DDD00A1F78A /* NSError+.swift */,
+			);
+			path = "Convenience Extensions";
+			sourceTree = "<group>";
+		};
+		AD287C6C210F1CBA00A1F78A /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C6F210F350200A1F78A /* COperationCondition.swift */,
+				AD287C73210F3E0E00A1F78A /* COperationError.swift */,
+				AD287C84210FE73200A1F78A /* CReachabilityCondition.swift */,
+			);
+			path = Conditions;
+			sourceTree = "<group>";
+		};
+		AD287C75210F3F8B00A1F78A /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C67210E575900A1F78A /* COperation.swift */,
+				AD287C80210FD61000A1F78A /* CGroupOperation.swift */,
+				AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		AD287C76210F413A00A1F78A /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C77210F415100A1F78A /* COperationObserver.swift */,
+				AD287C7C210F52EC00A1F78A /* CBlockObserver.swift */,
+			);
+			name = Observers;
+			sourceTree = "<group>";
+		};
+		AD287C79210F4EA200A1F78A /* Operation Queue */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C82210FD64800A1F78A /* CExclusivityController.swift */,
+				AD287C7A210F4EB400A1F78A /* COperationQueue.swift */,
+			);
+			name = "Operation Queue";
+			sourceTree = "<group>";
+		};
+		AD672E992107689B005A2E98 /* ResponseDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD672E9A2108A51C005A2E98 /* ResponseDataModel.swift */,
+				AD672E9E2108A5F9005A2E98 /* SampleDataModel */,
+			);
+			path = ResponseDataModel;
+			sourceTree = "<group>";
+		};
+		AD672E9E2108A5F9005A2E98 /* SampleDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */,
+				AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */,
+				AD672EA52108BFC3005A2E98 /* JPBirthday.swift */,
+			);
+			path = SampleDataModel;
+			sourceTree = "<group>";
+		};
+		AD672EA72108C75A005A2E98 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C66210E549100A1F78A /* Operations */,
+				AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */,
+				AD672EAA2108C819005A2E98 /* APIRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AD672EB2210A14FB005A2E98 /* DataOperations */ = {
+			isa = PBXGroup;
+			children = (
+				AD672EB3210A1A1D005A2E98 /* GetUsersOperation.swift */,
+			);
+			path = DataOperations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD20718D2101CCA100042159 /* Celio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD2071A32101CCA500042159 /* Build configuration list for PBXNativeTarget "Celio" */;
+			buildPhases = (
+				E9E7DC550B529DB77B7C9721 /* [CP] Check Pods Manifest.lock */,
+				AD20718A2101CCA100042159 /* Sources */,
+				AD20718B2101CCA100042159 /* Frameworks */,
+				AD20718C2101CCA100042159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Celio;
+			productName = Celio;
+			productReference = AD20718E2101CCA100042159 /* Celio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD2071862101CCA100042159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Jatin;
+				TargetAttributes = {
+					AD20718D2101CCA100042159 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AD2071892101CCA100042159 /* Build configuration list for PBXProject "Celio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD2071852101CCA100042159;
+			productRefGroup = AD20718F2101CCA100042159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD20718D2101CCA100042159 /* Celio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD20718C2101CCA100042159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD20719F2101CCA500042159 /* LaunchScreen.storyboard in Resources */,
+				AD20719C2101CCA500042159 /* Assets.xcassets in Resources */,
+				AD2071972101CCA100042159 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9E7DC550B529DB77B7C9721 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Celio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD20718A2101CCA100042159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD287C74210F3E0E00A1F78A /* COperationError.swift in Sources */,
+				AD287C85210FE73200A1F78A /* CReachabilityCondition.swift in Sources */,
+				AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */,
+				AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */,
+				AD287C6B210E586200A1F78A /* NSLock+.swift in Sources */,
+				AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */,
+				AD287C7B210F4EB400A1F78A /* COperationQueue.swift in Sources */,
+				AD287C81210FD61000A1F78A /* CGroupOperation.swift in Sources */,
+				AD287C83210FD64800A1F78A /* CExclusivityController.swift in Sources */,
+				AD287C7D210F52EC00A1F78A /* CBlockObserver.swift in Sources */,
+				AD672E9D2108A574005A2E98 /* JPSampleResponseDataModel.swift in Sources */,
+				AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */,
+				AD672EB4210A1A1D005A2E98 /* GetUsersOperation.swift in Sources */,
+				AD287C72210F3DDD00A1F78A /* NSError+.swift in Sources */,
+				AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */,
+				AD287C68210E575900A1F78A /* COperation.swift in Sources */,
+				AD287C70210F350200A1F78A /* COperationCondition.swift in Sources */,
+				AD287C78210F415100A1F78A /* COperationObserver.swift in Sources */,
+				AD672EA62108BFC3005A2E98 /* JPBirthday.swift in Sources */,
+				AD2071942101CCA100042159 /* ViewController.swift in Sources */,
+				AD2071922101CCA100042159 /* AppDelegate.swift in Sources */,
+				AD287C87211066FB00A1F78A /* CURLSessionTaskOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD2071952101CCA100042159 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD2071962101CCA100042159 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD20719D2101CCA500042159 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD20719E2101CCA500042159 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD2071A12101CCA500042159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD2071A22101CCA500042159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD2071A42101CCA500042159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F25D76A972F0D9D1AD640AE /* Pods-Celio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Celio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.zomato.Celio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD2071A52101CCA500042159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FB1D1DF7BF94AF06A491DD /* Pods-Celio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Celio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.zomato.Celio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD2071892101CCA100042159 /* Build configuration list for PBXProject "Celio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2071A12101CCA500042159 /* Debug */,
+				AD2071A22101CCA500042159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD2071A32101CCA500042159 /* Build configuration list for PBXNativeTarget "Celio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2071A42101CCA500042159 /* Debug */,
+				AD2071A52101CCA500042159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD2071982101CCA100042159 /* Celio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD2071992101CCA100042159 /* Celio.xcdatamodel */,
+			);
+			currentVersion = AD2071992101CCA100042159 /* Celio.xcdatamodel */;
+			path = Celio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD2071862101CCA100042159 /* Project object */;
+}
