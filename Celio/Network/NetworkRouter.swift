@@ -10,10 +10,23 @@ import Foundation
 
 protocol NetworkRouter: CURLRequestConvertible {
   static var baseURLPath: String { get }
-  var method: HTTPMethod { get }
+  var method: CHTTPMethod { get }
   var path: String { get }
 }
 
 protocol CURLRequestConvertible {
-  public func asURLRequest() throws -> URLRequest
+  func asURLRequest() -> URLRequest
+}
+
+
+public enum CHTTPMethod: String {
+  case options = "OPTIONS"
+  case get     = "GET"
+  case head    = "HEAD"
+  case post    = "POST"
+  case put     = "PUT"
+  case patch   = "PATCH"
+  case delete  = "DELETE"
+  case trace   = "TRACE"
+  case connect = "CONNECT"
 }

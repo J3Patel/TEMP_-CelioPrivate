@@ -16,7 +16,7 @@ public enum APIRouter: NetworkRouter {
     return "http://uinames.com"
   }
   
-  var method: HTTPMethod {
+  var method: CHTTPMethod {
     switch self {
     case .getData:
       return .get
@@ -30,10 +30,10 @@ public enum APIRouter: NetworkRouter {
     }
   }
   
-  public func asURLRequest() throws -> URLRequest {
+  public func asURLRequest() -> URLRequest {
     //Setting the request with all the necessary parameters for the call
     
-    let url = URL(string: APIRouter.baseURLPath)
+    let url = URL(string: APIRouter.baseURLPath)!
     var request = URLRequest(url: url.appendingPathComponent(path))
     
     request.httpMethod = method.rawValue
@@ -42,7 +42,7 @@ public enum APIRouter: NetworkRouter {
     switch self {
     case .getData:
       request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-      return try JSONEncoder.default.encode(request)
+      return request
     }
   }
 }
