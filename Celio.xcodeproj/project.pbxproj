@@ -27,6 +27,8 @@
 		AD287C87211066FB00A1F78A /* CURLSessionTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */; };
 		AD287C8A2110B21300A1F78A /* CNetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C892110B21300A1F78A /* CNetworkOperation.swift */; };
 		AD287C8C2111C7BC00A1F78A /* CNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C8B2111C7BC00A1F78A /* CNetworkObserver.swift */; };
+		AD287C8E2111DEFE00A1F78A /* CParseDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C8D2111DEFE00A1F78A /* CParseDataOperation.swift */; };
+		AD287C912111E6F900A1F78A /* FetchUserDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C902111E6F900A1F78A /* FetchUserDataOperation.swift */; };
 		AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672E9A2108A51C005A2E98 /* ResponseDataModel.swift */; };
 		AD672E9D2108A574005A2E98 /* JPSampleResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */; };
 		AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */; };
@@ -61,6 +63,8 @@
 		AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CURLSessionTaskOperation.swift; sourceTree = "<group>"; };
 		AD287C892110B21300A1F78A /* CNetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetworkOperation.swift; sourceTree = "<group>"; };
 		AD287C8B2111C7BC00A1F78A /* CNetworkObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetworkObserver.swift; sourceTree = "<group>"; };
+		AD287C8D2111DEFE00A1F78A /* CParseDataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CParseDataOperation.swift; sourceTree = "<group>"; };
+		AD287C902111E6F900A1F78A /* FetchUserDataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDataOperation.swift; sourceTree = "<group>"; };
 		AD672E9A2108A51C005A2E98 /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
 		AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPSampleResponseDataModel.swift; sourceTree = "<group>"; };
 		AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPCreditCard.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				AD287C80210FD61000A1F78A /* CGroupOperation.swift */,
 				AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */,
 				AD287C892110B21300A1F78A /* CNetworkOperation.swift */,
+				AD287C8D2111DEFE00A1F78A /* CParseDataOperation.swift */,
 			);
 			name = COperations;
 			sourceTree = "<group>";
@@ -197,9 +202,18 @@
 		AD287C88211081E100A1F78A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				AD287C8F2111E62100A1F78A /* Operations */,
 				AD672E992107689B005A2E98 /* ResponseDataModel */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		AD287C8F2111E62100A1F78A /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				AD287C902111E6F900A1F78A /* FetchUserDataOperation.swift */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 		AD672E992107689B005A2E98 /* ResponseDataModel */ = {
@@ -242,6 +256,7 @@
 				AD20718A2101CCA100042159 /* Sources */,
 				AD20718B2101CCA100042159 /* Frameworks */,
 				AD20718C2101CCA100042159 /* Resources */,
+				AD287C922111F13D00A1F78A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -299,6 +314,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AD287C922111F13D00A1F78A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
 		E9E7DC550B529DB77B7C9721 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +359,7 @@
 				AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */,
 				AD287C6B210E586200A1F78A /* NSLock+.swift in Sources */,
 				AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */,
+				AD287C8E2111DEFE00A1F78A /* CParseDataOperation.swift in Sources */,
 				AD287C7B210F4EB400A1F78A /* COperationQueue.swift in Sources */,
 				AD287C81210FD61000A1F78A /* CGroupOperation.swift in Sources */,
 				AD287C83210FD64800A1F78A /* CExclusivityController.swift in Sources */,
@@ -339,6 +368,7 @@
 				AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */,
 				AD287C72210F3DDD00A1F78A /* NSError+.swift in Sources */,
 				AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */,
+				AD287C912111E6F900A1F78A /* FetchUserDataOperation.swift in Sources */,
 				AD287C68210E575900A1F78A /* COperation.swift in Sources */,
 				AD287C70210F350200A1F78A /* COperationCondition.swift in Sources */,
 				AD287C78210F415100A1F78A /* COperationObserver.swift in Sources */,

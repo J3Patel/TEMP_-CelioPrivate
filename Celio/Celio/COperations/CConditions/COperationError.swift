@@ -16,10 +16,10 @@ enum COperationErrorCode: Int {
 }
 
 // This makes it easy to compare an `NSError.code` to an `OperationErrorCode`.
-func ==(lhs: Int, rhs: COperationErrorCode) -> Bool {
+func == (lhs: Int, rhs: COperationErrorCode) -> Bool {
   return lhs == rhs.rawValue
 }
 
-func ==(lhs: COperationErrorCode, rhs: Int) -> Bool {
+func == (lhs: COperationErrorCode, rhs: Int) -> Bool {
   return lhs.rawValue == rhs
 }

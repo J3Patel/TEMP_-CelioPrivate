@@ -18,7 +18,6 @@ protocol CURLRequestConvertible {
   func asURLRequest() -> URLRequest
 }
 
-
 public enum CHTTPMethod: String {
   case options = "OPTIONS"
   case get     = "GET"

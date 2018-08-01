@@ -10,50 +10,46 @@ import Foundation
 
 class CNetworkObserver: COperationObserver {
 
-  init() {
-    
-  }
-  
-  func operationDidStart(operation: COperation) {
-    
-  }
-  
-  func operation(operation: COperation, didProduceOperation newOperation: Operation) {
-    
-  }
-  
-  func operationDidFinish(operation: COperation, errors: [NSError]) {
-    
-  }
-  
+    init() { }
+
+    func operationDidStart(operation: COperation) {
+    }
+
+    func operation(operation: COperation, didProduceOperation newOperation: Operation) {
+
+    }
+
+    func operationDidFinish(operation: COperation, errors: [NSError]) {
+
+    }
+
 }
 
-
 private class NetworkIndicatorController {
-  
-  static let sharedIndicatorController = NetworkIndicatorController()
-  
-  private var activityCount = 0
-  
-  private var visibilityTimer: Timer?
-  
-  func networkActivityDidStart() {
-    
-  }
-  
-  func networkActivityDidEnd() {
-    
-  }
-  
-  private func updateIndicatorVisibility() {
-    
-  }
-  
-  private func showIndicator() {
-  
-  }
-  
-  private func hideIndicator() {
-    
-  }
+
+    static let sharedIndicatorController = NetworkIndicatorController()
+
+    private var activityCount = 0
+
+    private var visibilityTimer: Timer?
+
+    func networkActivityDidStart() {
+
+    }
+
+    func networkActivityDidEnd() {
+
+    }
+
+    private func updateIndicatorVisibility() {
+
+    }
+
+    private func showIndicator() {
+
+    }
+
+    private func hideIndicator() {
+
+    }
 }

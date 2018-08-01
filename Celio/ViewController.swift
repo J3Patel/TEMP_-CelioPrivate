@@ -10,12 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    let temp: APIRouter = .getData()
-    print(temp.path)
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let temp: APIRouter = .getData()
+        print(temp.path)
+    }
 
 }
-

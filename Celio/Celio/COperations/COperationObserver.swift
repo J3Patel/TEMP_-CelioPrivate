@@ -9,10 +9,10 @@
 import Foundation
 
 protocol COperationObserver {
-  
-  func operationDidStart(operation: COperation)
-  
-  func operation(operation: COperation, didProduceOperation newOperation: Operation)
-  
-  func operationDidFinish(operation: COperation, errors: [NSError])
+
+    func operationDidStart(operation: COperation)
+
+    func operation(operation: COperation, didProduceOperation newOperation: Operation)
+
+    func operationDidFinish(operation: COperation, errors: [NSError])
 }

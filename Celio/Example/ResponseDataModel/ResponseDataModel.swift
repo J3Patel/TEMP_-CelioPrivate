@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ResponseDataModel where Self: Codable {
-  
+
 }

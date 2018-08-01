@@ -8,23 +8,23 @@
 
 import Foundation
 
-struct JPBirthday : Codable {
-  
-  let dmy : String?
-  let mdy : String?
-  let raw : Int?
-  
-  enum CodingKeys: String, CodingKey {
-    case dmy = "dmy"
-    case mdy = "mdy"
-    case raw = "raw"
-  }
-  
-  init(from decoder: Decoder) throws {
-    let values = try decoder.container(keyedBy: CodingKeys.self)
-    dmy = try values.decodeIfPresent(String.self, forKey: .dmy)
-    mdy = try values.decodeIfPresent(String.self, forKey: .mdy)
-    raw = try values.decodeIfPresent(Int.self, forKey: .raw)
-  }
-  
+struct JPBirthday: Codable {
+    
+    let dmy: String?
+    let mdy: String?
+    let raw: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case dmy
+        case mdy
+        case raw
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        dmy = try values.decodeIfPresent(String.self, forKey: .dmy)
+        mdy = try values.decodeIfPresent(String.self, forKey: .mdy)
+        raw = try values.decodeIfPresent(Int.self, forKey: .raw)
+    }
+
 }
