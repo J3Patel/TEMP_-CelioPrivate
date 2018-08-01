@@ -25,6 +25,8 @@
 		AD287C83210FD64800A1F78A /* CExclusivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C82210FD64800A1F78A /* CExclusivityController.swift */; };
 		AD287C85210FE73200A1F78A /* CReachabilityCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C84210FE73200A1F78A /* CReachabilityCondition.swift */; };
 		AD287C87211066FB00A1F78A /* CURLSessionTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */; };
+		AD287C8A2110B21300A1F78A /* CNetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C892110B21300A1F78A /* CNetworkOperation.swift */; };
+		AD287C8C2111C7BC00A1F78A /* CNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C8B2111C7BC00A1F78A /* CNetworkObserver.swift */; };
 		AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672E9A2108A51C005A2E98 /* ResponseDataModel.swift */; };
 		AD672E9D2108A574005A2E98 /* JPSampleResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */; };
 		AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */; };
@@ -57,6 +59,8 @@
 		AD287C82210FD64800A1F78A /* CExclusivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CExclusivityController.swift; sourceTree = "<group>"; };
 		AD287C84210FE73200A1F78A /* CReachabilityCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CReachabilityCondition.swift; sourceTree = "<group>"; };
 		AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CURLSessionTaskOperation.swift; sourceTree = "<group>"; };
+		AD287C892110B21300A1F78A /* CNetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetworkOperation.swift; sourceTree = "<group>"; };
+		AD287C8B2111C7BC00A1F78A /* CNetworkObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetworkObserver.swift; sourceTree = "<group>"; };
 		AD672E9A2108A51C005A2E98 /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
 		AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPSampleResponseDataModel.swift; sourceTree = "<group>"; };
 		AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPCreditCard.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				AD287C67210E575900A1F78A /* COperation.swift */,
 				AD287C80210FD61000A1F78A /* CGroupOperation.swift */,
 				AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */,
+				AD287C892110B21300A1F78A /* CNetworkOperation.swift */,
 			);
 			name = COperations;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			children = (
 				AD287C77210F415100A1F78A /* COperationObserver.swift */,
 				AD287C7C210F52EC00A1F78A /* CBlockObserver.swift */,
+				AD287C8B2111C7BC00A1F78A /* CNetworkObserver.swift */,
 			);
 			name = CObservers;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD287C8C2111C7BC00A1F78A /* CNetworkObserver.swift in Sources */,
 				AD287C74210F3E0E00A1F78A /* COperationError.swift in Sources */,
 				AD287C85210FE73200A1F78A /* CReachabilityCondition.swift in Sources */,
 				AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */,
@@ -336,6 +343,7 @@
 				AD287C70210F350200A1F78A /* COperationCondition.swift in Sources */,
 				AD287C78210F415100A1F78A /* COperationObserver.swift in Sources */,
 				AD672EA62108BFC3005A2E98 /* JPBirthday.swift in Sources */,
+				AD287C8A2110B21300A1F78A /* CNetworkOperation.swift in Sources */,
 				AD2071942101CCA100042159 /* ViewController.swift in Sources */,
 				AD2071922101CCA100042159 /* AppDelegate.swift in Sources */,
 				AD287C87211066FB00A1F78A /* CURLSessionTaskOperation.swift in Sources */,
