@@ -51,6 +51,12 @@ struct OperationConditionEvaluator {
     static func evaluate(conditions: [COperationCondition],
                          for operation: COperation,
                          completion: @escaping ([NSError]) -> Void) {
+
+        guard !conditions.isEmpty else {
+            completion([])
+            return
+        }
+
         let conditionGroup = DispatchGroup()
         var results = [OperationConditionResult?](repeating: nil, count: conditions.count)
 

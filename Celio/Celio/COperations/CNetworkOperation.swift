@@ -17,7 +17,6 @@ class CNetworkOperation: CGroupOperation {
         self.networkRequest = networkRequest
         super.init(operations: [])
         name = "Network Operation"
-
         let task = URLSession.shared
             .dataTask(with: networkRequest.asURLRequest()) { [weak self] (data, _, error) in
             guard let strongSelf = self else {return}

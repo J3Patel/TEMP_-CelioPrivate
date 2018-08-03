@@ -10,11 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var opertaionQueue = COperationQueue()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ViewController-----viewDidLoad-")
 
-        let temp: APIRouter = .getData()
-        print(temp.path)
+    }
+    @IBAction func callApiButtonTapped(_ sender: Any) {
+        let opn = FetchUserDataOperation { (data) in
+            
+            print(data)
+        }
+
+//        let networkOperation = CNetworkOperation(networkRequest: APIRouter.getData())
+//        networkOperation.start()
+//        opertaionQueue = COperationQueue()
+
+//        let op = TempOp()
+//        op.userInitiated = true
+
+        opertaionQueue.qualityOfService = .userInitiated
+        opertaionQueue.addOperation(opn)
     }
 
 }

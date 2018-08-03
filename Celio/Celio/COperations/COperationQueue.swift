@@ -22,8 +22,8 @@ class COperationQueue: OperationQueue {
     override func addOperation(_ op: Operation) {
         if let operation = op as? COperation {
             let delegate = CBlockObserver(
-                producHandler: { [weak self](operation, producedOperation) in
-                    self?.addOperation(producedOperation)
+                producHandler: { [weak self] in
+                    self?.addOperation($1)
                 },
                 finishHandler: { [weak self] operation, errors in
                     if let queue = self {
@@ -67,6 +67,7 @@ class COperationQueue: OperationQueue {
             }
         }
         delegate?.operationQueue?(self, willAddOperation: op)
+        print("operation added \(op)")
         super.addOperation(op)
     }
 
@@ -81,5 +82,4 @@ class COperationQueue: OperationQueue {
             }
         }
     }
-
 }

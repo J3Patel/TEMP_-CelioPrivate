@@ -23,7 +23,7 @@ class CParseDataOperation<T: ResponseDataModel>: COperation {
         } catch {
             finish(with: NSError(domain: "Parse Data Error",
                                  code: 0,
-                                 userInfo: ["error": "Cannot parse to model\(T.self)"]))
+                                 userInfo: ["error": "Cannot parse to model \(T.self)"]))
         }
     }
 

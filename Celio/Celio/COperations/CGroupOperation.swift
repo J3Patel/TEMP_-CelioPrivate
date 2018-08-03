@@ -40,7 +40,7 @@ class CGroupOperation: COperation {
         internalQueue.addOperation(finishingOperation)
     }
 
-    func addOperation(operation: COperation) {
+    func addOperation(operation: Operation) {
         internalQueue.addOperation(operation)
     }
 
@@ -58,11 +58,11 @@ extension CGroupOperation: COperationQueueDelegate {
     final func operationQueue(_ operationQueue: COperationQueue, willAddOperation operation: Operation) {
         assert(!finishingOperation.isFinished && !finishingOperation.isExecuting,
                "cannot add new operations to a group after the group has completed")
-        if operation != finishingOperation {
+        if operation !== finishingOperation {
             finishingOperation.addDependency(operation)
         }
 
-        if operation != startingOperation {
+        if operation !== startingOperation {
             operation.addDependency(startingOperation)
         }
 

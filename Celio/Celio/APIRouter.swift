@@ -26,7 +26,8 @@ public enum APIRouter: NetworkRouter {
     var path: String {
         switch self {
         case .getData:
-            return "/api/?ext&amount=250"
+//            return "/api/?ext&amount=250"
+            return "/api/?ext"
         }
     }
 

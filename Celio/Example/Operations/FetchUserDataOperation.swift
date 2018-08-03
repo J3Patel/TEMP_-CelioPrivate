@@ -10,9 +10,11 @@ import Foundation
 
 class FetchUserDataOperation: CGroupOperation {
 
-    init(operations: [Operation], completion: @escaping (JPSampleResponseDataModel) -> Void) {
+    init(completion: @escaping (JPSampleResponseDataModel) -> Void) {
+
         let networkOperation = CNetworkOperation(networkRequest: APIRouter.getData())
         let parseOperation = CParseDataOperation<JPSampleResponseDataModel>()
+        
         let adapter = BlockOperation { [unowned parseOperation, unowned networkOperation] in
             parseOperation.dataFetched = networkOperation.dataFetched
         }
@@ -26,7 +28,7 @@ class FetchUserDataOperation: CGroupOperation {
         parseOperation.addDependency(adapter)
         finishingOperation.addDependency(parseOperation)
 
-        super.init(operations: [networkOperation, parseOperation, adapter])
+        super.init(operations: [networkOperation, parseOperation, adapter, finishingOperation])
     }
 
     override func operationDidFinish(operation: Operation, withErrors errors: [NSError]) {

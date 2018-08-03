@@ -57,6 +57,21 @@ class COperation: Operation {
 
     }
 
+    // use the KVO mechanism to indicate that changes to "state" affect other properties as well
+    @objc class func keyPathsForValuesAffectingIsReady() -> Set<NSObject> {
+        return ["state" as NSObject]
+    }
+
+    @objc class func keyPathsForValuesAffectingIsExecuting() -> Set<NSObject> {
+        return ["state" as NSObject]
+    }
+
+    @objc class func keyPathsForValuesAffectingIsFinished() -> Set<NSObject> {
+        return ["state" as NSObject]
+    }
+
+
+
     private var _state: State = .initialized
 
     private let stateBlock = NSLock()
@@ -102,6 +117,7 @@ class COperation: Operation {
             }
             return false
         case .ready:
+            print("isReady = \(super.isReady) - \(self))")
             return super.isReady || isCancelled
         default:
             return false
@@ -127,6 +143,7 @@ class COperation: Operation {
     }
 
     private func evaluateConditions() {
+        print("Evaluating conditions \(self)")
         assert(state == .pending && !isCancelled, "evaluateConditions() was called out-of-order")
         state = .evaluatingConditions
 
@@ -164,6 +181,7 @@ class COperation: Operation {
     // MARK: - Execution and Cancellation
 
     override final func start() {
+        print("operation started \(self)")
         super.start()
         if isCancelled {
             finish()
@@ -172,7 +190,7 @@ class COperation: Operation {
 
     override final func main() {
         assert(state == .ready, "This operation must be performed on an operation queue.")
-
+        print("operation in main \(self)")
         if _internalErrors.isEmpty && !isCancelled {
             state = .executing
 
