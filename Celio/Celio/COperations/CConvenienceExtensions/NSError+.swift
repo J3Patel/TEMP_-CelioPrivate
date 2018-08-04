@@ -8,8 +8,15 @@
 
 import Foundation
 
+
 extension NSError {
-  convenience init(code: COperationErrorCode, userInfo: [String: Any]? = nil) {
-    self.init(domain: COperationErrorDomain, code: code.rawValue, userInfo: userInfo)
-  }
+
+    convenience init(code: COperationErrorCode, userInfo: [String: Any]? = nil) {
+        self.init(.COperationError, code: code.rawValue, userInfo: userInfo)
+    }
+
+    convenience init(_ domain: CErrorDomain, code: Int, userInfo: [String: Any]? = nil) {
+        self.init(domain: domain.rawValue, code: code, userInfo: userInfo)
+    }
+
 }

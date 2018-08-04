@@ -67,7 +67,6 @@ class COperationQueue: OperationQueue {
             }
         }
         delegate?.operationQueue?(self, willAddOperation: op)
-        print("operation added \(op)")
         super.addOperation(op)
     }
 

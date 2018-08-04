@@ -14,8 +14,9 @@ class FetchUserDataOperation: CGroupOperation {
 
         let networkOperation = CNetworkOperation(networkRequest: APIRouter.getData())
         let parseOperation = CParseDataOperation<JPSampleResponseDataModel>()
-        
+
         let adapter = BlockOperation { [unowned parseOperation, unowned networkOperation] in
+            
             parseOperation.dataFetched = networkOperation.dataFetched
         }
         let finishingOperation = BlockOperation { [unowned parseOperation] in
@@ -32,10 +33,12 @@ class FetchUserDataOperation: CGroupOperation {
     }
 
     override func operationDidFinish(operation: Operation, withErrors errors: [NSError]) {
-        print("Fetching complete")
-        print("Errors")
+        if errors.count > 0 {
+//            cancel()
+        }
         for err in errors {
-            print(err)
+
+            np("Failed \(operation) with Error: \(err)")
         }
     }
 }

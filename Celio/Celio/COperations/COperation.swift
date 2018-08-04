@@ -117,7 +117,6 @@ class COperation: Operation {
             }
             return false
         case .ready:
-            print("isReady = \(super.isReady) - \(self))")
             return super.isReady || isCancelled
         default:
             return false
@@ -143,7 +142,6 @@ class COperation: Operation {
     }
 
     private func evaluateConditions() {
-        print("Evaluating conditions \(self)")
         assert(state == .pending && !isCancelled, "evaluateConditions() was called out-of-order")
         state = .evaluatingConditions
 
@@ -181,7 +179,6 @@ class COperation: Operation {
     // MARK: - Execution and Cancellation
 
     override final func start() {
-        print("operation started \(self)")
         super.start()
         if isCancelled {
             finish()
@@ -190,7 +187,6 @@ class COperation: Operation {
 
     override final func main() {
         assert(state == .ready, "This operation must be performed on an operation queue.")
-        print("operation in main \(self)")
         if _internalErrors.isEmpty && !isCancelled {
             state = .executing
 

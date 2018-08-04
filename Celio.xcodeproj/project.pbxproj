@@ -36,6 +36,7 @@
 		AD672EA62108BFC3005A2E98 /* JPBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA52108BFC3005A2E98 /* JPBirthday.swift */; };
 		AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */; };
 		AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EAA2108C819005A2E98 /* APIRouter.swift */; };
+		ADAF504F2115945400C4C276 /* Print+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF504E2115945400C4C276 /* Print+Ext.swift */; };
 		F5E86D676C57664974EB35BB /* Pods_Celio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		AD672EA52108BFC3005A2E98 /* JPBirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPBirthday.swift; sourceTree = "<group>"; };
 		AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		AD672EAA2108C819005A2E98 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		ADAF504E2115945400C4C276 /* Print+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Print+Ext.swift"; sourceTree = "<group>"; };
 		F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -206,6 +208,7 @@
 			children = (
 				AD287C8F2111E62100A1F78A /* Operations */,
 				AD672E992107689B005A2E98 /* ResponseDataModel */,
+				ADAF504E2115945400C4C276 /* Print+Ext.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */,
 				AD287C72210F3DDD00A1F78A /* NSError+.swift in Sources */,
 				AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */,
+				ADAF504F2115945400C4C276 /* Print+Ext.swift in Sources */,
 				AD260436211348790006524E /* TempOp.swift in Sources */,
 				AD287C912111E6F900A1F78A /* FetchUserDataOperation.swift in Sources */,
 				AD287C68210E575900A1F78A /* COperation.swift in Sources */,

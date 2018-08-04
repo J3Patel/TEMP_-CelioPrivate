@@ -7,6 +7,7 @@
 //
 
 import Foundation
+public typealias Parameters = [String : Any]
 
 public enum APIRouter: NetworkRouter {
 
@@ -26,8 +27,8 @@ public enum APIRouter: NetworkRouter {
     var path: String {
         switch self {
         case .getData:
-//            return "/api/?ext&amount=250"
-            return "/api/?ext"
+            return "/api/?ext&amount=250"
+//            return "/api"
         }
     }
 
@@ -38,7 +39,7 @@ public enum APIRouter: NetworkRouter {
         var request = URLRequest(url: url.appendingPathComponent(path))
 
         request.httpMethod = method.rawValue
-        request.timeoutInterval = TimeInterval(30)
+//        request.timeoutInterval = TimeInterval(30)
 
         switch self {
         case .getData:

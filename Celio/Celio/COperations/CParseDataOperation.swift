@@ -14,12 +14,14 @@ class CParseDataOperation<T: ResponseDataModel>: COperation {
     var parsedData: T?
 
     override func execute() {
+        np("Parse operation started")
         guard let dataFetched = dataFetched else {
             finish(with: NSError(domain: "Parse Data Error", code: 0, userInfo: ["error": "Data is Empty"]))
             return
         }
         do {
             parsedData = try JSONDecoder().decode(T.self, from: dataFetched)
+            finish()
         } catch {
             finish(with: NSError(domain: "Parse Data Error",
                                  code: 0,

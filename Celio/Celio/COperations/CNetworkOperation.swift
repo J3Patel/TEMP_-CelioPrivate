@@ -18,13 +18,16 @@ class CNetworkOperation: CGroupOperation {
         super.init(operations: [])
         name = "Network Operation"
         let task = URLSession.shared
-            .dataTask(with: networkRequest.asURLRequest()) { [weak self] (data, _, error) in
-            guard let strongSelf = self else {return}
-            if let error = error {
-                strongSelf.aggregateError(error: error as NSError)
-            } else {
-                strongSelf.dataFetched = data
-            }
+            .dataTask(with: networkRequest.asURLRequest()) { [weak self] (data, response, error) in
+                guard let strongSelf = self else {return}
+                if let httpResponseStatus = response as? HTTPURLResponse, httpResponseStatus.statusCode != 200 {
+                    let error = NSError(.API,
+                                        code: httpResponseStatus.statusCode,
+                                        userInfo: ["statusCode": httpResponseStatus.statusCode])
+                    strongSelf.aggregateError(error: error)
+                } else {
+                    strongSelf.dataFetched = data
+                }
         }
 
         let taskOperation = CURLSessionTaskOperation(task)
@@ -40,6 +43,7 @@ class CNetworkOperation: CGroupOperation {
 
     override func operationDidFinish(operation: Operation, withErrors errors: [NSError]) {
         // show network errors here
+        np("Network operation did Finished with Errors \(errors.debugDescription)/")
     }
 
 }

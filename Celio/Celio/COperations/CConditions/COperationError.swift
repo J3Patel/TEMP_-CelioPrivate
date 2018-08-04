@@ -8,7 +8,10 @@
 
 import Foundation
 
-let COperationErrorDomain = "COperationErrors"
+enum CErrorDomain: String {
+    case APIError
+    case COperationError
+}
 
 enum COperationErrorCode: Int {
   case conditionFailed = 1

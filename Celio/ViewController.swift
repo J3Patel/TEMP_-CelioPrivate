@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     }
     @IBAction func callApiButtonTapped(_ sender: Any) {
         let opn = FetchUserDataOperation { (data) in
+            print("In Response")
             
             print(data)
         }
