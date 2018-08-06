@@ -21,7 +21,7 @@ class CNetworkOperation: CGroupOperation {
             .dataTask(with: networkRequest.asURLRequest()) { [weak self] (data, response, error) in
                 guard let strongSelf = self else {return}
                 if let httpResponseStatus = response as? HTTPURLResponse, httpResponseStatus.statusCode != 200 {
-                    let error = NSError(.API,
+                    let error = NSError(.APIError,
                                         code: httpResponseStatus.statusCode,
                                         userInfo: ["statusCode": httpResponseStatus.statusCode])
                     strongSelf.aggregateError(error: error)

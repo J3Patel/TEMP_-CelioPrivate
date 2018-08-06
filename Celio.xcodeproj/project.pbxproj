@@ -37,6 +37,7 @@
 		AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */; };
 		AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EAA2108C819005A2E98 /* APIRouter.swift */; };
 		ADAF504F2115945400C4C276 /* Print+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF504E2115945400C4C276 /* Print+Ext.swift */; };
+		ADAF505121189A9200C4C276 /* CMutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */; };
 		F5E86D676C57664974EB35BB /* Pods_Celio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		AD672EAA2108C819005A2E98 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		ADAF504E2115945400C4C276 /* Print+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Print+Ext.swift"; sourceTree = "<group>"; };
+		ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMutuallyExclusive.swift; sourceTree = "<group>"; };
 		F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				AD287C6F210F350200A1F78A /* COperationCondition.swift */,
 				AD287C73210F3E0E00A1F78A /* COperationError.swift */,
 				AD287C84210FE73200A1F78A /* CReachabilityCondition.swift */,
+				ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */,
 			);
 			path = CConditions;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				AD287C8C2111C7BC00A1F78A /* CNetworkObserver.swift in Sources */,
 				AD287C74210F3E0E00A1F78A /* COperationError.swift in Sources */,
 				AD287C85210FE73200A1F78A /* CReachabilityCondition.swift in Sources */,
+				ADAF505121189A9200C4C276 /* CMutuallyExclusive.swift in Sources */,
 				AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */,
 				AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */,
 				AD287C6B210E586200A1F78A /* NSLock+.swift in Sources */,

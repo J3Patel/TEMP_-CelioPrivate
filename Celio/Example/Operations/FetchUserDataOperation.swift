@@ -16,9 +16,9 @@ class FetchUserDataOperation: CGroupOperation {
         let parseOperation = CParseDataOperation<JPSampleResponseDataModel>()
 
         let adapter = BlockOperation { [unowned parseOperation, unowned networkOperation] in
-            
             parseOperation.dataFetched = networkOperation.dataFetched
         }
+
         let finishingOperation = BlockOperation { [unowned parseOperation] in
             if let parsedModel = parseOperation.parsedData {
                 completion(parsedModel)
@@ -33,12 +33,9 @@ class FetchUserDataOperation: CGroupOperation {
     }
 
     override func operationDidFinish(operation: Operation, withErrors errors: [NSError]) {
-        if errors.count > 0 {
-//            cancel()
-        }
-        for err in errors {
 
-            np("Failed \(operation) with Error: \(err)")
+        for err in errors {
+            np("Failed- \(operation) with Error: \(err)")
         }
     }
 }
