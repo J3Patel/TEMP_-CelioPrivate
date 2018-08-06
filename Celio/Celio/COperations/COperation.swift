@@ -70,8 +70,6 @@ class COperation: Operation {
         return ["state" as NSObject]
     }
 
-
-
     private var _state: State = .initialized
 
     private let stateBlock = NSLock()

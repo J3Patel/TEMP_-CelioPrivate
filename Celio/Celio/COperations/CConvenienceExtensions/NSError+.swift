@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 extension NSError {
 
     convenience init(code: COperationErrorCode, userInfo: [String: Any]? = nil) {

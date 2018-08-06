@@ -10,10 +10,10 @@ import Foundation
 
 class CNetworkOperation: CGroupOperation {
 
-    let networkRequest: NetworkRouter
+    let networkRequest: CNetworkRouter
     var dataFetched: Data?
 
-    init(networkRequest: NetworkRouter) {
+    init(networkRequest: CNetworkRouter) {
         self.networkRequest = networkRequest
         super.init(operations: [])
         name = "Network Operation"

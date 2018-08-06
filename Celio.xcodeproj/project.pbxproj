@@ -13,7 +13,6 @@
 		AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD2071982101CCA100042159 /* Celio.xcdatamodeld */; };
 		AD20719C2101CCA500042159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD20719B2101CCA500042159 /* Assets.xcassets */; };
 		AD20719F2101CCA500042159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD20719D2101CCA500042159 /* LaunchScreen.storyboard */; };
-		AD260436211348790006524E /* TempOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD260435211348790006524E /* TempOp.swift */; };
 		AD287C68210E575900A1F78A /* COperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C67210E575900A1F78A /* COperation.swift */; };
 		AD287C6B210E586200A1F78A /* NSLock+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C6A210E586200A1F78A /* NSLock+.swift */; };
 		AD287C70210F350200A1F78A /* COperationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD287C6F210F350200A1F78A /* COperationCondition.swift */; };
@@ -34,7 +33,7 @@
 		AD672E9D2108A574005A2E98 /* JPSampleResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */; };
 		AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */; };
 		AD672EA62108BFC3005A2E98 /* JPBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA52108BFC3005A2E98 /* JPBirthday.swift */; };
-		AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */; };
+		AD672EA92108C7DA005A2E98 /* CNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EA82108C7DA005A2E98 /* CNetworkRouter.swift */; };
 		AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EAA2108C819005A2E98 /* APIRouter.swift */; };
 		ADAF504F2115945400C4C276 /* Print+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF504E2115945400C4C276 /* Print+Ext.swift */; };
 		ADAF505121189A9200C4C276 /* CMutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */; };
@@ -52,7 +51,6 @@
 		AD20719B2101CCA500042159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD20719E2101CCA500042159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD2071A02101CCA500042159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD260435211348790006524E /* TempOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempOp.swift; sourceTree = "<group>"; };
 		AD287C67210E575900A1F78A /* COperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COperation.swift; sourceTree = "<group>"; };
 		AD287C6A210E586200A1F78A /* NSLock+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock+.swift"; sourceTree = "<group>"; };
 		AD287C6F210F350200A1F78A /* COperationCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COperationCondition.swift; sourceTree = "<group>"; };
@@ -73,7 +71,7 @@
 		AD672E9C2108A574005A2E98 /* JPSampleResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPSampleResponseDataModel.swift; sourceTree = "<group>"; };
 		AD672EA32108BFB2005A2E98 /* JPCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPCreditCard.swift; sourceTree = "<group>"; };
 		AD672EA52108BFC3005A2E98 /* JPBirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPBirthday.swift; sourceTree = "<group>"; };
-		AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		AD672EA82108C7DA005A2E98 /* CNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNetworkRouter.swift; sourceTree = "<group>"; };
 		AD672EAA2108C819005A2E98 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		ADAF504E2115945400C4C276 /* Print+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Print+Ext.swift"; sourceTree = "<group>"; };
 		ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMutuallyExclusive.swift; sourceTree = "<group>"; };
@@ -209,6 +207,7 @@
 		AD287C88211081E100A1F78A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				AD672EAA2108C819005A2E98 /* APIRouter.swift */,
 				AD287C8F2111E62100A1F78A /* Operations */,
 				AD672E992107689B005A2E98 /* ResponseDataModel */,
 				ADAF504E2115945400C4C276 /* Print+Ext.swift */,
@@ -220,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				AD287C902111E6F900A1F78A /* FetchUserDataOperation.swift */,
-				AD260435211348790006524E /* TempOp.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -248,8 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				AD287C66210E549100A1F78A /* COperations */,
-				AD672EA82108C7DA005A2E98 /* NetworkRouter.swift */,
-				AD672EAA2108C819005A2E98 /* APIRouter.swift */,
+				AD672EA82108C7DA005A2E98 /* CNetworkRouter.swift */,
 			);
 			path = Celio;
 			sourceTree = "<group>";
@@ -368,7 +365,7 @@
 				AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */,
 				AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */,
 				AD287C6B210E586200A1F78A /* NSLock+.swift in Sources */,
-				AD672EA92108C7DA005A2E98 /* NetworkRouter.swift in Sources */,
+				AD672EA92108C7DA005A2E98 /* CNetworkRouter.swift in Sources */,
 				AD287C8E2111DEFE00A1F78A /* CParseDataOperation.swift in Sources */,
 				AD287C7B210F4EB400A1F78A /* COperationQueue.swift in Sources */,
 				AD287C81210FD61000A1F78A /* CGroupOperation.swift in Sources */,
@@ -379,7 +376,6 @@
 				AD287C72210F3DDD00A1F78A /* NSError+.swift in Sources */,
 				AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */,
 				ADAF504F2115945400C4C276 /* Print+Ext.swift in Sources */,
-				AD260436211348790006524E /* TempOp.swift in Sources */,
 				AD287C912111E6F900A1F78A /* FetchUserDataOperation.swift in Sources */,
 				AD287C68210E575900A1F78A /* COperation.swift in Sources */,
 				AD287C70210F350200A1F78A /* COperationCondition.swift in Sources */,

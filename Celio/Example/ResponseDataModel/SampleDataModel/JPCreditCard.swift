@@ -9,7 +9,7 @@
 import Foundation
 
 struct JPCreditCard: Codable {
-    
+
     let expiration: String?
     let number: String?
     let pin: Int?

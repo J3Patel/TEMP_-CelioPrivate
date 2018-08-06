@@ -9,7 +9,7 @@
 import Foundation
 
 struct JPBirthday: Codable {
-    
+
     let dmy: String?
     let mdy: String?
     let raw: Int?

@@ -9,7 +9,7 @@
 import Foundation
 public typealias Parameters = [String: Any]
 
-public enum APIRouter: NetworkRouter {
+public enum APIRouter: CNetworkRouter {
 
     case getData()
 
@@ -27,8 +27,8 @@ public enum APIRouter: NetworkRouter {
     var path: String {
         switch self {
         case .getData:
-            return "/api/?ext&amount=250"
-//            return "/api"
+//            return "/api/?ext&amount=250" //To Test Failed Request
+            return "/api"                   //To Test Success Request
         }
     }
 

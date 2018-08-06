@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol NetworkRouter: CURLRequestConvertible {
+protocol CNetworkRouter: CURLRequestConvertible {
   static var baseURLPath: String { get }
   var method: CHTTPMethod { get }
   var path: String { get }
