@@ -13,43 +13,39 @@ class CNetworkObserver: COperationObserver {
     init() { }
 
     func operationDidStart(operation: COperation) {
+        DispatchQueue.main.async {
+            CNetworkIndicatorController.sharedIndicatorController.networkActivityDidStart()
+        }
     }
 
-    func operation(operation: COperation, didProduceOperation newOperation: Operation) {
-
-    }
+    func operation(operation: COperation, didProduceOperation newOperation: Operation) { }
 
     func operationDidFinish(operation: COperation, errors: [NSError]) {
-
+        DispatchQueue.main.async {
+            CNetworkIndicatorController.sharedIndicatorController.networkActivityDidEnd()
+        }
     }
 
 }
 
-private class NetworkIndicatorController {
+protocol CNetworkIndicatorControllerDelegate: class {
+    func networkActivityDidStart()
+    func networkActivityDidEnd()
+}
 
-    static let sharedIndicatorController = NetworkIndicatorController()
+private class CNetworkIndicatorController {
 
-    private var activityCount = 0
+    static let sharedIndicatorController = CNetworkIndicatorController()
 
-    private var visibilityTimer: Timer?
+    weak var delegate: CNetworkIndicatorControllerDelegate?
+
+    private init() { }
 
     func networkActivityDidStart() {
-
+        delegate?.networkActivityDidStart()
     }
 
     func networkActivityDidEnd() {
-
-    }
-
-    private func updateIndicatorVisibility() {
-
-    }
-
-    private func showIndicator() {
-
-    }
-
-    private func hideIndicator() {
-
+        delegate?.networkActivityDidEnd()
     }
 }

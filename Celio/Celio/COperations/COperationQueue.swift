@@ -57,7 +57,7 @@ class COperationQueue: OperationQueue {
             }
             operation.willEnqueue()
         } else {
-            op.completionBlock = { [weak self, weak op] in
+            op.addCompletionBlock { [weak self, weak op] in
                 guard let queue = self,
                     let op = op else {
                     return

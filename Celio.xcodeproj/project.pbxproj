@@ -39,6 +39,7 @@
 		ADAF505121189A9200C4C276 /* CMutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */; };
 		ADAF50532118A5C400C4C276 /* CBackgroundObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF50522118A5C400C4C276 /* CBackgroundObserver.swift */; };
 		ADAF50552119D55200C4C276 /* CBlockOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF50542119D55200C4C276 /* CBlockOperation.swift */; };
+		ADAF50592119DD0200C4C276 /* Operation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF50582119DD0200C4C276 /* Operation+.swift */; };
 		F5E86D676C57664974EB35BB /* Pods_Celio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMutuallyExclusive.swift; sourceTree = "<group>"; };
 		ADAF50522118A5C400C4C276 /* CBackgroundObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBackgroundObserver.swift; sourceTree = "<group>"; };
 		ADAF50542119D55200C4C276 /* CBlockOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBlockOperation.swift; sourceTree = "<group>"; };
+		ADAF50582119DD0200C4C276 /* Operation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation+.swift"; sourceTree = "<group>"; };
 		F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 			children = (
 				AD287C6A210E586200A1F78A /* NSLock+.swift */,
 				AD287C71210F3DDD00A1F78A /* NSError+.swift */,
+				ADAF50582119DD0200C4C276 /* Operation+.swift */,
 			);
 			path = CConvenienceExtensions;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				AD287C83210FD64800A1F78A /* CExclusivityController.swift in Sources */,
 				AD287C7D210F52EC00A1F78A /* CBlockObserver.swift in Sources */,
 				AD672E9D2108A574005A2E98 /* JPSampleResponseDataModel.swift in Sources */,
+				ADAF50592119DD0200C4C276 /* Operation+.swift in Sources */,
 				AD672E9B2108A51C005A2E98 /* ResponseDataModel.swift in Sources */,
 				AD287C72210F3DDD00A1F78A /* NSError+.swift in Sources */,
 				AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */,
