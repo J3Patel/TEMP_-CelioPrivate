@@ -17,6 +17,13 @@ class ViewController: UIViewController {
             print(data)
         }
         opertaionQueue.addOperation(opn)
+
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController")
+        let op = CBlockOperation {
+            self.present(vc!, animated: true, completion: nil)
+        }
+        op.addCondition(condition: CMutuallyExclusive<UIViewController>())
+        opertaionQueue.addOperation(op)
     }
 
 }

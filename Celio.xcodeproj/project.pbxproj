@@ -37,6 +37,8 @@
 		AD672EAB2108C819005A2E98 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD672EAA2108C819005A2E98 /* APIRouter.swift */; };
 		ADAF504F2115945400C4C276 /* Print+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF504E2115945400C4C276 /* Print+Ext.swift */; };
 		ADAF505121189A9200C4C276 /* CMutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */; };
+		ADAF50532118A5C400C4C276 /* CBackgroundObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF50522118A5C400C4C276 /* CBackgroundObserver.swift */; };
+		ADAF50552119D55200C4C276 /* CBlockOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF50542119D55200C4C276 /* CBlockOperation.swift */; };
 		F5E86D676C57664974EB35BB /* Pods_Celio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		AD672EAA2108C819005A2E98 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		ADAF504E2115945400C4C276 /* Print+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Print+Ext.swift"; sourceTree = "<group>"; };
 		ADAF505021189A9200C4C276 /* CMutuallyExclusive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMutuallyExclusive.swift; sourceTree = "<group>"; };
+		ADAF50522118A5C400C4C276 /* CBackgroundObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBackgroundObserver.swift; sourceTree = "<group>"; };
+		ADAF50542119D55200C4C276 /* CBlockOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBlockOperation.swift; sourceTree = "<group>"; };
 		F35F4F7B288A305D06ED7267 /* Pods_Celio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -181,6 +185,7 @@
 				AD287C86211066FB00A1F78A /* CURLSessionTaskOperation.swift */,
 				AD287C892110B21300A1F78A /* CNetworkOperation.swift */,
 				AD287C8D2111DEFE00A1F78A /* CParseDataOperation.swift */,
+				ADAF50542119D55200C4C276 /* CBlockOperation.swift */,
 			);
 			name = COperations;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				AD287C77210F415100A1F78A /* COperationObserver.swift */,
 				AD287C7C210F52EC00A1F78A /* CBlockObserver.swift */,
 				AD287C8B2111C7BC00A1F78A /* CNetworkObserver.swift */,
+				ADAF50522118A5C400C4C276 /* CBackgroundObserver.swift */,
 			);
 			name = CObservers;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 			files = (
 				AD287C8C2111C7BC00A1F78A /* CNetworkObserver.swift in Sources */,
 				AD287C74210F3E0E00A1F78A /* COperationError.swift in Sources */,
+				ADAF50552119D55200C4C276 /* CBlockOperation.swift in Sources */,
 				AD287C85210FE73200A1F78A /* CReachabilityCondition.swift in Sources */,
 				ADAF505121189A9200C4C276 /* CMutuallyExclusive.swift in Sources */,
 				AD672EA42108BFB2005A2E98 /* JPCreditCard.swift in Sources */,
@@ -377,6 +384,7 @@
 				AD20719A2101CCA100042159 /* Celio.xcdatamodeld in Sources */,
 				ADAF504F2115945400C4C276 /* Print+Ext.swift in Sources */,
 				AD287C912111E6F900A1F78A /* FetchUserDataOperation.swift in Sources */,
+				ADAF50532118A5C400C4C276 /* CBackgroundObserver.swift in Sources */,
 				AD287C68210E575900A1F78A /* COperation.swift in Sources */,
 				AD287C70210F350200A1F78A /* COperationCondition.swift in Sources */,
 				AD287C78210F415100A1F78A /* COperationObserver.swift in Sources */,
